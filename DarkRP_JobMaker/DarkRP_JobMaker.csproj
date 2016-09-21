@@ -46,23 +46,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorSwatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorSwatch.Designer.cs">
+      <DependentUpon>ColorSwatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrossFormVariables.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Models.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelSelector.Designer.cs">
+      <DependentUpon>ModelSelector.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ResultWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultWindow.Designer.cs">
+      <DependentUpon>ResultWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeaponSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeaponSelector.Designer.cs">
+      <DependentUpon>WeaponSelector.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ColorSwatch.en-US.resx">
+      <DependentUpon>ColorSwatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorSwatch.resx">
+      <DependentUpon>ColorSwatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.en-US.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.ru.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Models.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelSelector.en-US.resx">
+      <DependentUpon>ModelSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelSelector.resx">
+      <DependentUpon>ModelSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultWindow.en-US.resx">
+      <DependentUpon>ResultWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultWindow.resx">
+      <DependentUpon>ResultWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeaponSelector.en-US.resx">
+      <DependentUpon>WeaponSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeaponSelector.resx">
+      <DependentUpon>WeaponSelector.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,6 +144,142 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_delete_remove_exit_cross_x_button_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DarkRP_JobMaker_ml.xml" />
+    <None Include="Resources\icon175x175.png" />
+    <None Include="Resources\model87.png" />
+    <None Include="Resources\model86.png" />
+    <None Include="Resources\model85.png" />
+    <None Include="Resources\model84.png" />
+    <None Include="Resources\model83.png" />
+    <None Include="Resources\model82.png" />
+    <None Include="Resources\model81.png" />
+    <None Include="Resources\model80.png" />
+    <None Include="Resources\model79.png" />
+    <None Include="Resources\model78.png" />
+    <None Include="Resources\model77.png" />
+    <None Include="Resources\model76.png" />
+    <None Include="Resources\model75.png" />
+    <None Include="Resources\model74.png" />
+    <None Include="Resources\model73.png" />
+    <None Include="Resources\model72.png" />
+    <None Include="Resources\model71.png" />
+    <None Include="Resources\model70.png" />
+    <None Include="Resources\model69.png" />
+    <None Include="Resources\model68.png" />
+    <None Include="Resources\model67.png" />
+    <None Include="Resources\model66.png" />
+    <None Include="Resources\model65.png" />
+    <None Include="Resources\model64.png" />
+    <None Include="Resources\model63.png" />
+    <None Include="Resources\model62.png" />
+    <None Include="Resources\model61.png" />
+    <None Include="Resources\model60.png" />
+    <None Include="Resources\model59.png" />
+    <None Include="Resources\model58.png" />
+    <None Include="Resources\model57.png" />
+    <None Include="Resources\model56.png" />
+    <None Include="Resources\model55.png" />
+    <None Include="Resources\model54.png" />
+    <None Include="Resources\model53.png" />
+    <None Include="Resources\model52.png" />
+    <None Include="Resources\model51.png" />
+    <None Include="Resources\model50.png" />
+    <None Include="Resources\model49.png" />
+    <None Include="Resources\model48.png" />
+    <None Include="Resources\model47.png" />
+    <None Include="Resources\model46.png" />
+    <None Include="Resources\model45.png" />
+    <None Include="Resources\model44.png" />
+    <None Include="Resources\model43.png" />
+    <None Include="Resources\model42.png" />
+    <None Include="Resources\model41.png" />
+    <None Include="Resources\model40.png" />
+    <None Include="Resources\model39.png" />
+    <None Include="Resources\model38.png" />
+    <None Include="Resources\model37.png" />
+    <None Include="Resources\model36.png" />
+    <None Include="Resources\model35.png" />
+    <None Include="Resources\model34.png" />
+    <None Include="Resources\model33.png" />
+    <None Include="Resources\model32.png" />
+    <None Include="Resources\model31.png" />
+    <None Include="Resources\model30.png" />
+    <None Include="Resources\model29.png" />
+    <None Include="Resources\model28.png" />
+    <None Include="Resources\model27.png" />
+    <None Include="Resources\model26.png" />
+    <None Include="Resources\model25.png" />
+    <None Include="Resources\model24.png" />
+    <None Include="Resources\model23.png" />
+    <None Include="Resources\model22.png" />
+    <None Include="Resources\model21.png" />
+    <None Include="Resources\model20.png" />
+    <None Include="Resources\model19.png" />
+    <None Include="Resources\model18.png" />
+    <None Include="Resources\model17.png" />
+    <None Include="Resources\model16.png" />
+    <None Include="Resources\model15.png" />
+    <None Include="Resources\model14.png" />
+    <None Include="Resources\model13.png" />
+    <None Include="Resources\model12.png" />
+    <None Include="Resources\model11.png" />
+    <None Include="Resources\model10.png" />
+    <None Include="Resources\model9.png" />
+    <None Include="Resources\model8.png" />
+    <None Include="Resources\model7.png" />
+    <None Include="Resources\model6.png" />
+    <None Include="Resources\model5.png" />
+    <None Include="Resources\model4.png" />
+    <None Include="Resources\model3.png" />
+    <None Include="Resources\model2.png" />
+    <None Include="Resources\model1.png" />
+    <None Include="Resources\WeaponIcon31.png" />
+    <None Include="Resources\WeaponIcon30.png" />
+    <None Include="Resources\WeaponIcon29.png" />
+    <None Include="Resources\WeaponIcon28.png" />
+    <None Include="Resources\WeaponIcon27.png" />
+    <None Include="Resources\WeaponIcon26.png" />
+    <None Include="Resources\WeaponIcon25.png" />
+    <None Include="Resources\WeaponIcon24.png" />
+    <None Include="Resources\WeaponIcon23.png" />
+    <None Include="Resources\WeaponIcon22.png" />
+    <None Include="Resources\WeaponIcon21.png" />
+    <None Include="Resources\WeaponIcon20.png" />
+    <None Include="Resources\WeaponIcon19.png" />
+    <None Include="Resources\WeaponIcon18.png" />
+    <None Include="Resources\WeaponIcon17.png" />
+    <None Include="Resources\WeaponIcon16.png" />
+    <None Include="Resources\WeaponIcon15.png" />
+    <None Include="Resources\WeaponIcon14.png" />
+    <None Include="Resources\WeaponIcon13.png" />
+    <None Include="Resources\WeaponIcon12.png" />
+    <None Include="Resources\WeaponIcon11.png" />
+    <None Include="Resources\WeaponIcon10.png" />
+    <None Include="Resources\WeaponIcon9.png" />
+    <None Include="Resources\WeaponIcon8.png" />
+    <None Include="Resources\WeaponIcon7.png" />
+    <None Include="Resources\WeaponIcon6.png" />
+    <None Include="Resources\WeaponIcon5.png" />
+    <None Include="Resources\WeaponIcon4.png" />
+    <None Include="Resources\WeaponIcon3.png" />
+    <None Include="Resources\WeaponIcon2.png" />
+    <None Include="Resources\WeaponIcon1.png" />
+    <None Include="Resources\WeaponIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MlRuntime\MLRuntime.csproj">
+      <Project>{BC72E02F-E7E4-4FF2-8AA9-999C1A8BFC77}</Project>
+      <Name>MLRuntime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
